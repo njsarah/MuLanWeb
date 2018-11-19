@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean 
+	id="SpringHelloWorld" 
+	class = com.mulan.spring.helloworld.impl.SpringHelloWorld>
+	</bean>
+	<bean
+	id="HelloWorldService"
+	class = "com.mulan.spring.helloworld.HelloWorldService">	
+	</bean>
+</beans>

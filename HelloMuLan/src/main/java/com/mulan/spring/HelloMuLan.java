@@ -1,0 +1,20 @@
+package com.mulan.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.mulan.spring.helloworld.HelloWorld;
+import com.mulan.spring.helloworld.HelloWorldService;
+
+public class HelloMuLan {
+	public static void main(String[] args)
+	{
+		ApplicationContext context 
+		= new ClassPathXmlApplicationContext("beans.xml");
+		HelloWorldService service =
+				(HelloWorldService) context.getBean("HelloWorldService");
+		
+		HelloWorld hw = service.getHelloWorld();
+		hw.sayHello();
+	}
+}

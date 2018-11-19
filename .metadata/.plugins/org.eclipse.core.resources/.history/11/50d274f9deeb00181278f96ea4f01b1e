@@ -1,0 +1,5 @@
+package com.mulan.spring.helloworld.impl;
+
+public class SpringHelloWorld {
+
+}
